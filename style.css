@@ -1,0 +1,220 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.background-image {
+	background-image: url(alexandre-pellaes-6vAjp0pscX0-unsplash-1-1.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	filter: brightness(40%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+
+.head {
+	position: fixed;
+	top: 0;
+	display: flex;
+	padding: 1em;
+	width: 100%;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	right: 10px;
+	margin-bottom: 10px;
+	top: 0px;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	text-decoration: none;
+	width: auto;
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	z-index: 1;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+.menu a {
+	text-decoration: none;
+	color: rgb(252, 250, 250);
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.menu-icon {
+	font-size: 20px;
+	color: #050601;
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+}
+
+.första-sidan {
+
+	display: flex;
+
+
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10em;
+	color: #ffffff;
+	padding: px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	height: 40vh;
+	line-height: 1.5;
+
+}
+
+.första-sidan h1 {
+	font-size: 32px;
+	font-weight: bold;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.första-sidan p {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-top: 10px;
+	line-height: 15px;
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: bold;
+	text-align: center;
+}
+
+.läs-konferens {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007BFF;
+	margin-top: 20px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 7px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+
+}
+
+.läs-konferens:hover {
+	background-color: #0056b3;
+
+}
+
+@media (max-width: 768px) {
+
+	.head {
+		padding: 0.5em;
+	}
+
+	.navbar {
+		flex-direction: column;
+
+	}
+
+	.menu {
+		display: none;
+		flex-direction: column;
+		position: relative;
+		top: 50px;
+
+
+		background-color: #6c6d6eee;
+		backdrop-filter: blur(15px);
+		padding: 10px 0;
+		width: 100%;
+	}
+
+	.menu a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+		margin-right: 20px;
+		font-size: 20px;
+	}
+
+	.menu li {
+		margin: 10px 0;
+		text-align: center;
+		color: #f1f1f1;
+
+	}
+
+	.menu-toggle:checked~.menu {
+		display: block;
+	}
+
+	.menu-toggle:checked+.menu-icon+.menu {
+		display: flex;
+	}
+
+	.menu-icon {
+		display: block;
+		font-size: 25px;
+		color: #fcfcfd;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 10px;
+
+	}
+
+	.första-sidan {
+		padding: 10px;
+		text-align: center;
+	}
+
+	.första-sidan h1 {
+		font-size: 28px;
+	}
+
+	.första-sidan p {
+		font-size: 16px;
+	}
+
+
+	.läs-konferens {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+}
